@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  --ligth-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: Overpass, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.container {
+  width: 350px;
+  height: 350px;
+  background-color: var(--very-dark-blue);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.star-container {
+  border-radius: 200px;
+  background-color: var(--dark-blue);
+  width: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+h2.title {
+  margin-bottom: 12px;
+}
+p.text {
+  font-size: 13px;
+  color: var(--ligth-grey);
+}
+
+.ratings-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1.8rem auto;
+  width: 100%;
+}
+
+.rating {
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  color: var(--ligth-grey);
+  padding: 0.7rem 1rem;
+  font-size: 12px;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+.rating:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button.submit {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.7rem 0.3rem;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 11px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  text-align: center;
+}
+
+button.submit:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+.selected {
+  background-color: var(--medium-grey);
+  color: white;
+}
+
+.thankyou-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  width: 40%;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.score {
+  color: var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+  width: 60%;
+  padding: 3px;
+  font-size: 13px;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
