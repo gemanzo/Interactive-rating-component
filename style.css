@@ -55,16 +55,38 @@ p.text {
 
 .ratings-container {
   display: flex;
-  flex-direction: row;
   margin: 1.8rem auto;
   width: 100%;
+}
+
+input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none; /*to disable the default appearance of radio button*/
+  -moz-appearance: none;
+  position: relative;
+}
+
+input[type='radio']:focus {
+  outline: none; /*to remove the square border on focus*/
+}
+label {
+  position: absolute;
+  z-index: 999;
+  transform: translate(12px, 10px);
+}
+label:first-of-type {
+  transform: translate(14px, 10px);
+}
+
+fieldset {
+  border: none;
 }
 
 .rating {
   border-radius: 50%;
   background-color: var(--dark-blue);
   color: var(--ligth-grey);
-  padding: 0.7rem 1rem;
+  padding: 1.1rem 1.1rem;
   font-size: 12px;
   margin-right: 1.2rem;
   cursor: pointer;

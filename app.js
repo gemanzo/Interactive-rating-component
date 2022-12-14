@@ -9,7 +9,7 @@ ratings.forEach((rating) =>
     resetSelect();
 
     rating.classList.toggle('selected');
-    selectedRating.textContent = rating.dataset.rating;
+    selectedRating.textContent = rating.value;
   })
 );
 
