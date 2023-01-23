@@ -32,7 +32,7 @@ Users should be able to:
 ![](images/screenshot2.png)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://interactive-rating-componenttt.netlify.app/)
+- Live Site URL: [here](https://interactive-rating-componenttt.netlify.app/)
 
 ## My process
 
